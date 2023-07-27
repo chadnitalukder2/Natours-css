@@ -124,6 +124,18 @@ body {
     }
 }
 
+@keyframes moveInbottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 .btn {
 
     &:link,
@@ -182,17 +194,4 @@ body {
         animation-fill-mode: backwards;
     }
 
-}
-
-
-@keyframes moveInbottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
 }
