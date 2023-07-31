@@ -4,11 +4,13 @@
   "description": "landing page for natourse",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch": "sass --watch --update --style=expanded sass/main.scss:css/style.css"
   },
   "author": "jonas",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "sass": "^1.64.1"
   }
 }
