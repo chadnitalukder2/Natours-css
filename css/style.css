@@ -211,6 +211,12 @@ body {
   transform: translateY(0);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -411,9 +417,33 @@ body {
 }
 .story__img {
   height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  backface-visibility: hidden;
+  transition: all 0.5s;
 }
 .story__text {
   transform: skewX(12deg);
+}
+.story__caption {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.story:hover .story__img {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(80%);
 }
 
 .row {
