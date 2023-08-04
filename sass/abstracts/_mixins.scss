@@ -28,6 +28,9 @@ $bareakpoint arguement choices:
 - tab-land
 - big-desktop
 
+order: base + typography > general layout + grid > page layout > components
+
+
 1em = 16px
 */
 @mixin respond($breakpoint){
@@ -36,7 +39,7 @@ $bareakpoint arguement choices:
         }
 
     @if $breakpoint == tab-port {
-          @media(max-width:6.255em) { @content };  //900px / 16
+          @media(max-width:900px) { @content };  //900px / 16
      }
 
     @if $breakpoint == tab-land {
