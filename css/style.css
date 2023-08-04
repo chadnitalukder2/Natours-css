@@ -1,3 +1,18 @@
+/*
+0 -- 600px :     phone
+600 - 900px : tablet portrait
+600 - 1200px : tablet landscape
+[1200 - 1800] is where our normal style apply
+1800px +   :   big desktop
+
+$bareakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 @keyframes moveInleft {
   0% {
     opacity: 0;
@@ -44,6 +59,26 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 6.255em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
